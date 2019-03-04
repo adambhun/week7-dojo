@@ -25,5 +25,3 @@ export function chop3 (number:number, array:number[]) {
     }
   }
 }
-
-console.log(chop2(arr, 9));
