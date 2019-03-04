@@ -33,13 +33,13 @@ export function chop3 (number:number, array:number[]):number {
 
 let counter: number = 0;
 export function chop4 (number:number, array:number[]):number {
+  console.log(array);
+  
   if (array[0] === undefined) {
     return -1;
-  }  
-  if (number === array[0]) {
-    console.log(counter, number, arr, arr[0]);
-    return counter;
-    
+  } else if (array[0] === number) {
+    // console.log(counter, number, arr, arr[0]);
+    return counter;    
   } else {
     counter++;
     array.splice(0, 1)
@@ -47,4 +47,4 @@ export function chop4 (number:number, array:number[]):number {
   }
 }
 
-chop4(0, arr);
+chop4(9, arr);
