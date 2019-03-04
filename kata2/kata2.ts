@@ -19,13 +19,14 @@ export function chop2 (number:number, array:number[]) {
 }
 
 export function chop3 (number:number, array:number[]) {
-  let counter: number = 0;
-  while (array !== []) {
-    if (array[0] === number) {
+  let counter: number = array.length - 1;
+  while (array[0] !== undefined) {
+    if (array[array.length - 1] === number) {
       return counter;
     } else {
-      counter++;
-      array.slice(array.length, 1);
+      counter--;
+      array.splice(array.length -1, 1);   
     }
   }
+  return -1;
 }
