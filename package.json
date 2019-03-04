@@ -1,0 +1,23 @@
+{
+  "name": "day-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adambhun/week7-dojo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adambhun/week7-dojo/issues"
+  },
+  "homepage": "https://github.com/adambhun/week7-dojo#readme",
+  "dependencies": {
+    "tape": "^4.10.1",
+    "typescript": "^3.3.3333"
+  }
+}
