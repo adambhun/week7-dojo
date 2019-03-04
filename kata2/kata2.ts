@@ -14,6 +14,16 @@ export function chop2 (array:number[], number:number) {
   }
 }
 
-
+export function chop3 (array:number[], number:number) {
+  let counter: number = 0;
+  while (array !== []) {
+    if (array[0] === number) {
+      return counter;
+    } else {
+      counter++;
+      array.slice(array.length, 1);
+    }
+  }
+}
 
 console.log(chop2(arr, 9));
