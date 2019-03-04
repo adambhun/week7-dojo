@@ -7,11 +7,15 @@ export function chop (number:number, array:number[]) {
 }
 
 export function chop2 (number:number, array:number[]) {
+  if (array[0] === undefined) {
+    return -1;
+  }
   for (let index = 0; index < array.length; index++) {
     if (array[index] === number) {
       return index;
     }
   }
+  return -1;
 }
 
 export function chop3 (number:number, array:number[]) {

@@ -1,9 +1,7 @@
 'use strict';
 
-import { chop } from './kata2';
+import { chop, chop2, chop3 } from './kata2';
 let test = require('tape');
-
-
 
 test('kata2 test', (t) => {
   t.equal(-1,chop(3,[]));
@@ -27,4 +25,5 @@ test('kata2 test', (t) => {
   t.equal(-1, chop(4, [1,3,5,7]));
   t.equal(-1, chop(6, [1,3,5,7]));
   t.equal(-1, chop(8, [1,3,5,7]));
-})
+    t.end();
+});
